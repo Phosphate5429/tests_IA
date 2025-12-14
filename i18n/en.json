@@ -1,0 +1,402 @@
+{
+  "meta": {
+    "language": "English",
+    "languageCode": "en",
+    "direction": "ltr"
+  },
+  
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "save": "Save",
+    "reset": "Reset",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "skip": "Skip",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "more": "More",
+    "less": "Less",
+    "on": "On",
+    "off": "Off",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "active": "Active",
+    "inactive": "Inactive",
+    "visible": "Visible",
+    "hidden": "Hidden"
+  },
+  
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menu": "Menu",
+    "skipToContent": "Skip to main content",
+    "skipToNavigation": "Skip to navigation",
+    "backToTop": "Back to top",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Toggle language"
+  },
+  
+  "sections": {
+    "hero": {
+      "title": "Ultimate Showcase V3",
+      "subtitle": "Interactive Web Experience",
+      "description": "A cutting-edge demonstration of modern web technologies featuring creative coding, interactive games, audio visualization, and stunning UI effects.",
+      "cta": "Explore Now",
+      "scrollIndicator": "Scroll to explore"
+    },
+    
+    "creativeCoding": {
+      "title": "Creative Coding",
+      "subtitle": "3D Particle System",
+      "description": "Experience the power of WebGL with this interactive 3D particle system. Move your mouse to control the camera and watch thousands of particles respond in real-time.",
+      "instructions": "Move your mouse to interact with the particles",
+      "particleCount": "Particle count: {count}",
+      "fps": "FPS: {fps}",
+      "lowSpecMode": "Low-spec mode active"
+    },
+    
+    "aimTrainer": {
+      "title": "Aim Trainer",
+      "subtitle": "Test Your Precision",
+      "description": "Improve your mouse accuracy and reaction time with this challenging aim training game. Hit as many targets as you can before time runs out!",
+      "start": "Start Game",
+      "pause": "Pause",
+      "resume": "Resume",
+      "reset": "Reset",
+      "score": "Score: {score}",
+      "time": "Time: {time}s",
+      "accuracy": "Accuracy: {accuracy}%",
+      "targetsHit": "Targets hit: {count}",
+      "gameOver": "Game Over!",
+      "finalScore": "Final Score: {score}",
+      "playAgain": "Play Again",
+      "difficulty": "Difficulty",
+      "easy": "Easy",
+      "normal": "Normal",
+      "hard": "Hard",
+      "expert": "Expert",
+      "mode": "Mode",
+      "timed": "Timed",
+      "endless": "Endless",
+      "highScore": "High Score: {score}"
+    },
+    
+    "sortingVisualizer": {
+      "title": "Sorting Visualizer",
+      "subtitle": "Algorithm Animation",
+      "description": "Watch sorting algorithms come to life with beautiful visualizations. Compare different algorithms and see how they work step by step.",
+      "selectAlgorithm": "Select Algorithm",
+      "bubbleSort": "Bubble Sort",
+      "selectionSort": "Selection Sort",
+      "insertionSort": "Insertion Sort",
+      "mergeSort": "Merge Sort",
+      "quickSort": "Quick Sort",
+      "heapSort": "Heap Sort",
+      "startSorting": "Start Sorting",
+      "pauseSorting": "Pause",
+      "resetArray": "Reset Array",
+      "arraySize": "Array Size: {size}",
+      "comparisons": "Comparisons: {count}",
+      "swaps": "Swaps: {count}",
+      "time": "Time: {time}ms",
+      "sorted": "Array sorted!",
+      "sorting": "Sorting..."
+    },
+    
+    "audioVisualizer": {
+      "title": "Audio Visualizer",
+      "subtitle": "Real-time Sound Analysis",
+      "description": "Connect your microphone or upload an audio file to create stunning visual representations of sound. Experience multiple visualization modes.",
+      "uploadFile": "Upload Audio File",
+      "startMicrophone": "Start Microphone",
+      "stopMicrophone": "Stop Microphone",
+      "play": "Play",
+      "pause": "Pause",
+      "stop": "Stop",
+      "visualizationType": "Visualization Type",
+      "bars": "Frequency Bars",
+      "waveform": "Waveform",
+      "circle": "Circular",
+      "particles": "Particles",
+      "spectrum": "Spectrum",
+      "sensitivity": "Sensitivity",
+      "volume": "Volume",
+      "frequency": "Dominant Frequency: {freq} Hz",
+      "microphoneAccess": "Microphone access required",
+      "microphoneDenied": "Microphone access denied",
+      "fileLoaded": "Audio file loaded",
+      "noFile": "No audio file selected"
+    },
+    
+    "uiShowcase": {
+      "title": "UI Showcase",
+      "subtitle": "Modern Interface Elements",
+      "description": "Explore a collection of beautifully crafted UI components with smooth animations and interactive effects.",
+      "buttons": "Buttons",
+      "forms": "Forms",
+      "cards": "Cards",
+      "loaders": "Loaders",
+      "notifications": "Notifications",
+      "modals": "Modals",
+      "tooltips": "Tooltips",
+      "hoverEffect": "Hover Effect",
+      "clickEffect": "Click Effect",
+      "rippleEffect": "Ripple Effect",
+      "pulseEffect": "Pulse Effect",
+      "glowEffect": "Glow Effect",
+      "showNotification": "Show Notification",
+      "openModal": "Open Modal",
+      "showTooltip": "Show Tooltip",
+      "loading": "Loading...",
+      "success": "Operation successful!",
+      "error": "An error occurred",
+      "warning": "Warning",
+      "info": "Information"
+    }
+  },
+  
+  "controls": {
+    "theme": {
+      "toggle": "Toggle theme",
+      "dark": "Dark mode",
+      "light": "Light mode",
+      "auto": "Auto"
+    },
+    
+    "language": {
+      "toggle": "Toggle language",
+      "english": "English",
+      "french": "Français",
+      "select": "Select language"
+    },
+    
+    "accessibility": {
+      "increaseText": "Increase text size",
+      "decreaseText": "Decrease text size",
+      "highContrast": "High contrast mode",
+      "reduceMotion": "Reduce motion",
+      "screenReader": "Screen reader mode"
+    },
+    
+    "performance": {
+      "lowSpecMode": "Low-spec mode",
+      "enable": "Enable",
+      "disable": "Disable",
+      "fps": "FPS: {fps}",
+      "optimized": "Performance optimized"
+    }
+  },
+  
+  "notifications": {
+    "lowSpecDetected": {
+      "title": "Performance Mode",
+      "message": "Low-spec mode enabled for better performance. Some effects have been reduced.",
+      "action": "Got it"
+    },
+    
+    "audioPermission": {
+      "title": "Microphone Access",
+      "message": "This application needs access to your microphone for audio visualization.",
+      "allow": "Allow",
+      "deny": "Deny"
+    },
+    
+    "gamePaused": {
+      "title": "Game Paused",
+      "message": "The game has been paused. Click resume to continue.",
+      "resume": "Resume"
+    },
+    
+    "fileUploaded": {
+      "title": "File Uploaded",
+      "message": "Audio file successfully loaded and ready to play.",
+      "ok": "OK"
+    },
+    
+    "error": {
+      "title": "Error",
+      "message": "An unexpected error occurred. Please try again.",
+      "retry": "Retry"
+    }
+  },
+  
+  "modals": {
+    "gameOver": {
+      "title": "Game Over",
+      "score": "Your Score: {score}",
+      "accuracy": "Accuracy: {accuracy}%",
+      "time": "Time: {time}s",
+      "playAgain": "Play Again",
+      "backToMenu": "Back to Menu"
+    },
+    
+    "settings": {
+      "title": "Settings",
+      "appearance": "Appearance",
+      "audio": "Audio",
+      "gameplay": "Gameplay",
+      "accessibility": "Accessibility",
+      "performance": "Performance",
+      "save": "Save Settings",
+      "reset": "Reset to Defaults"
+    },
+    
+    "about": {
+      "title": "About",
+      "version": "Version {version}",
+      "description": "Ultimate Showcase V3 is a demonstration of modern web technologies and best practices.",
+      "technologies": "Technologies",
+      "features": "Features",
+      "close": "Close"
+    }
+  },
+  
+  "tooltips": {
+    "themeToggle": "Switch between dark and light theme",
+    "languageToggle": "Change language",
+    "lowSpecToggle": "Toggle low-spec mode for better performance",
+    "soundToggle": "Toggle sound effects",
+    "fullscreenToggle": "Toggle fullscreen mode",
+    "help": "Show help and instructions",
+    "settings": "Open settings menu",
+    "leaderboard": "View high scores",
+    "share": "Share this page",
+    "download": "Download file"
+  },
+  
+  "errors": {
+    "network": "Network error. Please check your connection.",
+    "audioContext": "Audio context not supported in this browser.",
+    "webgl": "WebGL not supported. Some visualizations may not work.",
+    "fileSize": "File size too large. Maximum size: {size}MB",
+    "fileType": "Invalid file type. Supported types: {types}",
+    "permission": "Permission denied. Please enable access in your browser settings.",
+    "unsupported": "This feature is not supported in your browser.",
+    "generic": "Something went wrong. Please try again."
+  },
+  
+  "time": {
+    "seconds": "{count} second",
+    "seconds_plural": "{count} seconds",
+    "minutes": "{count} minute",
+    "minutes_plural": "{count} minutes",
+    "hours": "{count} hour",
+    "hours_plural": "{count} hours",
+    "days": "{count} day",
+    "days_plural": "{count} days"
+  },
+  
+  "units": {
+    "pixels": "{count} px",
+    "percentage": "{count}%",
+    "hertz": "{count} Hz",
+    "kilobytes": "{count} KB",
+    "megabytes": "{count} MB",
+    "fps": "{count} FPS"
+  },
+  
+  "accessibility": {
+    "aria": {
+      "navigation": "Main navigation",
+      "content": "Main content",
+      "footer": "Footer",
+      "modal": "Dialog window",
+      "menu": "Menu",
+      "button": "Button",
+      "link": "Link",
+      "image": "Image",
+      "video": "Video",
+      "audio": "Audio player",
+      "canvas": "Interactive canvas",
+      "form": "Form",
+      "input": "Input field",
+      "select": "Dropdown menu",
+      "slider": "Slider control",
+      "checkbox": "Checkbox",
+      "radio": "Radio button",
+      "tab": "Tab",
+      "tooltip": "Tooltip",
+      "alert": "Alert message",
+      "status": "Status message"
+    },
+    
+    "labels": {
+      "menuButton": "Toggle menu",
+      "closeButton": "Close",
+      "playButton": "Play",
+      "pauseButton": "Pause",
+      "stopButton": "Stop",
+      "volumeSlider": "Volume control",
+      "progressBar": "Progress bar",
+      "loadingSpinner": "Loading",
+      "errorMessage": "Error message",
+      "successMessage": "Success message"
+    }
+  },
+  
+  "seo": {
+    "title": "Ultimate Showcase V3 - Interactive Web Experience",
+    "description": "Experience cutting-edge web technologies with interactive 3D graphics, games, audio visualization, and stunning UI effects.",
+    "keywords": "web development, interactive, 3D, games, audio visualization, UI effects, modern web",
+    "ogTitle": "Ultimate Showcase V3",
+    "ogDescription": "A cutting-edge demonstration of modern web technologies",
+    "ogImage": "https://example.com/og-image.jpg",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Ultimate Showcase V3",
+    "twitterDescription": "Experience modern web technologies"
+  },
+  
+  "performance": {
+    "loading": "Loading assets...",
+    "initializing": "Initializing modules...",
+    "ready": "Ready",
+    "optimizing": "Optimizing performance...",
+    "lowSpecActive": "Low-spec mode active",
+    "fpsStable": "Performance stable",
+    "fpsDropping": "Performance dropping",
+    "resourcesLoaded": "All resources loaded"
+  },
+  
+  "game": {
+    "ready": "Ready to start",
+    "getReady": "Get ready...",
+    "go": "GO!",
+    "timeUp": "Time's up!",
+    "newRecord": "New record!",
+    "perfect": "Perfect!",
+    "great": "Great!",
+    "good": "Good!",
+    "miss": "Miss!",
+    "combo": "Combo: {count}",
+    "multiplier": "Multiplier: x{count}",
+    "pause": "Game paused",
+    "resume": "Game resumed",
+    "quit": "Quit game",
+    "restart": "Restart game"
+  },
+  
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "url": "Please enter a valid URL",
+    "minLength": "Minimum length: {min} characters",
+    "maxLength": "Maximum length: {max} characters",
+    "pattern": "Invalid format",
+    "range": "Value must be between {min} and {max}",
+    "match": "Values do not match"
+  }
+}

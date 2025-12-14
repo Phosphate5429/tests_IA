@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ultimate Showcase V3 - A cutting-edge front-end demonstration featuring 3D particles, interactive games, sorting visualizations, audio experiences, and futuristic UI design">
+    <meta name="keywords" content="front-end, three.js, webgl, animations, interactive, showcase, web development">
+    <meta name="author" content="Kilo Code">
+    <meta property="og:title" content="Ultimate Showcase V3">
+    <meta property="og:description" content="Experience the future of web development with interactive 3D visuals, games, and animations">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <title>Ultimate Showcase V3</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwMGZmZmYiLz4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iOCIgZmlsbD0iIzAwMGEiLz4KPC9zdmc+">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/theme.css" as="style">
+    <link rel="preload" href="css/layout.css" as="style">
+    <link rel="preload" href="css/animations.css" as="style">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- CDN Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" defer></script>
+    
+    <!-- JavaScript Modules -->
+    <script src="js/i18n.js" defer></script>
+    <script src="js/performance.js" defer></script>
+    <script src="js/accessibility.js" defer></script>
+    <script src="js/effects.js" defer></script>
+    <script src="js/visuals.js" defer></script>
+    <script src="js/game.js" defer></script>
+    <script src="js/audio.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 data-i18n="nav.title">Ultimate Showcase V3</h1>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="menuitem">
+                    <a href="#particles" data-i18n="nav.sections.particles">3D Particles</a>
+                </li>
+                <li role="menuitem">
+                    <a href="#game" data-i18n="nav.sections.game">Aim Trainer</a>
+                </li>
+                <li role="menuitem">
+                    <a href="#sorting" data-i18n="nav.sections.sorting">Sorting Visualizer</a>
+                </li>
+                <li role="menuitem">
+                    <a href="#audio" data-i18n="nav.sections.audio">Audio Visualizer</a>
+                </li>
+                <li role="menuitem">
+                    <a href="#ui" data-i18n="nav.sections.ui">UI Showcase</a>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button 
+                    id="theme-toggle" 
+                    class="control-btn"
+                    aria-label="Toggle theme" 
+                    aria-pressed="false"
+                    data-i18n-attr="aria-label:common.toggleTheme"
+                    title="Toggle dark/light mode">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+                
+                <button 
+                    id="lang-toggle" 
+                    class="control-btn"
+                    aria-label="Switch language"
+                    data-i18n-attr="aria-label:common.toggleLang"
+                    title="Switch language">
+                    <span class="lang-icon" aria-hidden="true">🌍</span>
+                    <span class="lang-text" data-i18n="common.lang">EN</span>
+                </button>
+                
+                <button 
+                    id="perf-toggle" 
+                    class="control-btn"
+                    aria-label="Toggle performance mode"
+                    data-i18n-attr="aria-label:common.togglePerf"
+                    title="Toggle performance mode">
+                    <span class="perf-icon" aria-hidden="true">⚡</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Progress indicator -->
+        <div class="nav-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar"></div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        
+        <!-- Section 1: Creative Coding - 3D Particles -->
+        <section id="particles" class="section particles-section" aria-labelledby="particles-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 id="particles-title" data-i18n="particles.title">Creative Coding</h2>
+                    <p class="section-subtitle" data-i18n="particles.subtitle">Interactive 3D Particle System</p>
+                    <p class="section-description" data-i18n="particles.description">
+                        This particle system demonstrates WebGL acceleration and real-time mouse interactions.
+                    </p>
+                </div>
+                
+                <div class="particles-content">
+                    <div class="particles-canvas-container">
+                        <div 
+                            id="particles-canvas" 
+                            class="particles-canvas"
+                            role="application" 
+                            aria-label="3D Particle System"
+                            tabindex="0"
+                            aria-describedby="particles-desc">
+                        </div>
+                        <div id="particles-desc" class="sr-only">
+                            Interactive 3D particle system with mouse controls. Move your mouse to interact with the particles.
+                        </div>
+                    </div>
+                    
+                    <div class="particles-controls">
+                        <div class="control-group">
+                            <label for="particle-count" data-i18n="particles.controls.count">Particle Count</label>
+                            <input 
+                                type="range" 
+                                id="particle-count" 
+                                min="100" 
+                                max="2000" 
+                                value="1000" 
+                                step="100"
+                                aria-label="Adjust particle count"
+                                aria-describedby="particle-count-value">
+                            <span id="particle-count-value" class="control-value">1000</span>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="particle-speed" data-i18n="particles.controls.speed">Speed</label>
+                            <input 
+                                type="range" 
+                                id="particle-speed" 
+                                min="0.1" 
+                                max="3" 
+                                value="1" 
+                                step="0.1"
+                                aria-label="Adjust animation speed"
+                                aria-describedby="particle-speed-value">
+                            <span id="particle-speed-value" class="control-value">1.0</span>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="particle-color" data-i18n="particles.controls.color">Color Scheme</label>
+                            <select id="particle-color" aria-label="Select color scheme">
+                                <option value="cyan-magenta" data-i18n="particles.colors.cyanMagenta">Cyan-Magenta</option>
+                                <option value="neon-rainbow" data-i18n="particles.colors.neonRainbow">Neon Rainbow</option>
+                                <option value="electric-blue" data-i18n="particles.colors.electricBlue">Electric Blue</option>
+                                <option value="purple-haze" data-i18n="particles.colors.purpleHaze">Purple Haze</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="particle-shape" data-i18n="particles.controls.shape">Shape</label>
+                            <select id="particle-shape" aria-label="Select particle shape">
+                                <option value="sphere" data-i18n="particles.shapes.sphere">Sphere</option>
+                                <option value="cube" data-i18n="particles.shapes.cube">Cube</option>
+                                <option value="star" data-i18n="particles.shapes.star">Star</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group checkbox-group">
+                            <input type="checkbox" id="auto-rotate" checked aria-label="Auto rotate particles">
+                            <label for="auto-rotate" data-i18n="particles.controls.autoRotate">Auto Rotate</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fps-counter" aria-live="polite">
+                    <span data-i18n="particles.fps">FPS:</span>
+                    <span id="fps-value">60</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 2: Mini-Game - Aim Trainer -->
+        <section id="game" class="section game-section" aria-labelledby="game-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 id="game-title" data-i18n="game.title">Aim Trainer</h2>
+                    <p class="section-subtitle" data-i18n="game.subtitle">Test your reflexes</p>
+                    <p class="section-description" data-i18n="game.description">
+                        Click the targets as fast as you can!
+                    </p>
+                </div>
+                
+                <div class="game-content">
+                    <div class="game-info">
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span data-i18n="game.score">Score:</span>
+                                <span id="game-score">0</span>
+                            </div>
+                            <div class="stat">
+                                <span data-i18n="game.time">Time:</span>
+                                <span id="game-time">30</span>
+                                <span>s</span>
+                            </div>
+                            <div class="stat">
+                                <span data-i18n="game.best">Best:</span>
+                                <span id="game-best">0</span>
+                            </div>
+                        </div>
+                        
+                        <button id="game-start" class="btn btn-primary" data-i18n="game.start">
+                            Start Game
+                        </button>
+                    </div>
+                    
+                    <div class="game-canvas-container">
+                        <canvas 
+                            id="game-canvas" 
+                            class="game-canvas"
+                            role="application"
+                            aria-label="Aim Trainer Game"
+                            aria-describedby="game-instructions">
+                        </canvas>
+                        <div id="game-instructions" class="sr-only">
+                            Aim trainer game. Click on the appearing targets to score points.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Data Visualization - Sorting Algorithms -->
+        <section id="sorting" class="section sorting-section" aria-labelledby="sorting-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 id="sorting-title" data-i18n="sorting.title">Sorting Visualizer</h2>
+                    <p class="section-subtitle" data-i18n="sorting.subtitle">Watch algorithms in action</p>
+                    <p class="section-description" data-i18n="sorting.description">
+                        Visualize how different sorting algorithms work step by step.
+                    </p>
+                </div>
+                
+                <div class="sorting-content">
+                    <div class="sorting-controls">
+                        <div class="control-group">
+                            <label for="algorithm-select" data-i18n="sorting.controls.algorithm">Algorithm</label>
+                            <select id="algorithm-select" aria-label="Select sorting algorithm">
+                                <option value="bubble" data-i18n="sorting.algorithms.bubble">Bubble Sort</option>
+                                <option value="quick" data-i18n="sorting.algorithms.quick">Quick Sort</option>
+                                <option value="merge" data-i18n="sorting.algorithms.merge">Merge Sort</option>
+                                <option value="selection" data-i18n="sorting.algorithms.selection">Selection Sort</option>
+                                <option value="insertion" data-i18n="sorting.algorithms.insertion">Insertion Sort</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="array-size" data-i18n="sorting.controls.size">Array Size</label>
+                            <input 
+                                type="range" 
+                                id="array-size" 
+                                min="10" 
+                                max="100" 
+                                value="50" 
+                                step="5"
+                                aria-label="Adjust array size"
+                                aria-describedby="array-size-value">
+                            <span id="array-size-value" class="control-value">50</span>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="sort-speed" data-i18n="sorting.controls.speed">Speed</label>
+                            <input 
+                                type="range" 
+                                id="sort-speed" 
+                                min="1" 
+                                max="100" 
+                                value="50" 
+                                step="5"
+                                aria-label="Adjust sorting speed"
+                                aria-describedby="sort-speed-value">
+                            <span id="sort-speed-value" class="control-value">50</span>
+                        </div>
+                        
+                        <div class="control-buttons">
+                            <button id="sort-generate" class="btn btn-secondary" data-i18n="sorting.controls.generate">
+                                Generate New Array
+                            </button>
+                            <button id="sort-start" class="btn btn-primary" data-i18n="sorting.controls.start">
+                                Start Sorting
+                            </button>
+                            <button id="sort-pause" class="btn btn-secondary" disabled data-i18n="sorting.controls.pause">
+                                Pause
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="sorting-visualization">
+                        <canvas 
+                            id="sorting-canvas" 
+                            class="sorting-canvas"
+                            aria-label="Sorting algorithm visualization"
+                            aria-describedby="sorting-explanation">
+                        </canvas>
+                        <div id="sorting-explanation" class="sorting-explanation" aria-live="polite">
+                            <p data-i18n="sorting.explanation">Select an algorithm and click "Start Sorting" to begin visualization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: Audio Experience - Audio Visualizer -->
+        <section id="audio" class="section audio-section" aria-labelledby="audio-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 id="audio-title" data-i18n="audio.title">Audio Visualizer</h2>
+                    <p class="section-subtitle" data-i18n="audio.subtitle">See the sound</p>
+                    <p class="section-description" data-i18n="audio.description">
+                        Connect your microphone or play audio to visualize sound in real-time.
+                    </p>
+                </div>
+                
+                <div class="audio-content">
+                    <div class="audio-controls">
+                        <div class="control-group">
+                            <label for="visualization-mode" data-i18n="audio.controls.mode">Visualization Mode</label>
+                            <select id="visualization-mode" aria-label="Select visualization mode">
+                                <option value="bars" data-i18n="audio.modes.bars">Frequency Bars</option>
+                                <option value="circle" data-i18n="audio.modes.circle">Circle Particles</option>
+                                <option value="waveform" data-i18n="audio.modes.waveform">Waveform</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-buttons">
+                            <button id="audio-mic" class="btn btn-primary" data-i18n="audio.controls.mic">
+                                Use Microphone
+                            </button>
+                            <button id="audio-demo" class="btn btn-secondary" data-i18n="audio.controls.demo">
+                                Play Demo
+                            </button>
+                            <button id="audio-stop" class="btn btn-secondary" disabled data-i18n="audio.controls.stop">
+                                Stop
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="audio-visualization">
+                        <canvas 
+                            id="audio-canvas" 
+                            class="audio-canvas"
+                            aria-label="Audio visualization"
+                            aria-describedby="audio-status">
+                        </canvas>
+                        <div id="audio-status" class="audio-status" aria-live="polite">
+                            <p data-i18n="audio.status.idle">Click "Use Microphone" or "Play Demo" to start visualization.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="equalizer">
+                        <h3 data-i18n="audio.equalizer">Equalizer</h3>
+                        <div class="eq-bands">
+                            <div class="eq-band">
+                                <label>60Hz</label>
+                                <input type="range" class="eq-slider" min="-12" max="12" value="0" orient="vertical">
+                            </div>
+                            <div class="eq-band">
+                                <label>250Hz</label>
+                                <input type="range" class="eq-slider" min="-12" max="12" value="0" orient="vertical">
+                            </div>
+                            <div class="eq-band">
+                                <label>1kHz</label>
+                                <input type="range" class="eq-slider" min="-12" max="12" value="0" orient="vertical">
+                            </div>
+                            <div class="eq-band">
+                                <label>4kHz</label>
+                                <input type="range" class="eq-slider" min="-12" max="12" value="0" orient="vertical">
+                            </div>
+                            <div class="eq-band">
+                                <label>16kHz</label>
+                                <input type="range" class="eq-slider" min="-12" max="12" value="0" orient="vertical">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: UI/Design - Futuristic Interface -->
+        <section id="ui" class="section ui-section" aria-labelledby="ui-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 id="ui-title" data-i18n="ui.title">UI Showcase</h2>
+                    <p class="section-subtitle" data-i18n="ui.subtitle">Futuristic Design System</p>
+                    <p class="section-description" data-i18n="ui.description">
+                        Explore modern UI patterns, animations, and design principles.
+                    </p>
+                </div>
+                
+                <div class="ui-content">
+                    <div class="ui-showcase">
+                        <!-- Glassmorphism Cards -->
+                        <div class="ui-category">
+                            <h3 data-i18n="ui.categories.glassmorphism">Glassmorphism</h3>
+                            <div class="glass-cards">
+                                <div class="glass-card">
+                                    <h4 data-i18n="ui.card.title">Neon Card</h4>
+                                    <p data-i18n="ui.card.description">Frosted glass effect with neon glow</p>
+                                    <button class="btn btn-outline" data-i18n="ui.card.action">Hover Me</button>
+                                </div>
+                                <div class="glass-card">
+                                    <h4 data-i18n="ui.card.title">Electric Card</h4>
+                                    <p data-i18n="ui.card.description">Animated border with particle effects</p>
+                                    <button class="btn btn-outline" data-i18n="ui.card.action">Hover Me</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Animated Buttons -->
+                        <div class="ui-category">
+                            <h3 data-i18n="ui.categories.buttons">Animated Buttons</h3>
+                            <div class="button-showcase">
+                                <button class="btn btn-primary btn-pulse" data-i18n="ui.buttons.pulse">
+                                    Pulse Effect
+                                </button>
+                                <button class="btn btn-secondary btn-glow" data-i18n="ui.buttons.glow">
+                                    Neon Glow
+                                </button>
+                                <button class="btn btn-outline btn-liquid" data-i18n="ui.buttons.liquid">
+                                    Liquid Fill
+                                </button>
+                                <button class="btn btn-primary btn-particle" data-i18n="ui.buttons.particle">
+                                    Particle Burst
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Loading States -->
+                        <div class="ui-category">
+                            <h3 data-i18n="ui.categories.loading">Loading Animations</h3>
+                            <div class="loading-showcase">
+                                <div class="loader-spinner"></div>
+                                <div class="loader-bars"></div>
+                                <div class="loader-particles"></div>
+                                <div class="loader-wave"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Transitions -->
+                        <div class="ui-category">
+                            <h3 data-i18n="ui.categories.transitions">Smooth Transitions</h3>
+                            <div class="transition-showcase">
+                                <div class="transition-box box-fade"></div>
+                                <div class="transition-box box-slide"></div>
+                                <div class="transition-box box-scale"></div>
+                                <div class="transition-box box-rotate"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">About</h3>
+                    <p data-i18n="footer.description">
+                        Ultimate Showcase V3 demonstrates modern front-end techniques with interactive 3D visuals, 
+                        games, and animations. Built with Three.js, GSAP, and vanilla JavaScript.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.technologies">Technologies</h3>
+                    <ul class="tech-list">
+                        <li>Three.js r128</li>
+                        <li>GSAP 3.12.2</li>
+                        <li>Chart.js 4.4.0</li>
+                        <li>Web Audio API</li>
+                        <li>Canvas API</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.accessibility">Accessibility</h3>
+                    <ul class="a11y-list">
+                        <li data-i18n="footer.a11y.keyboard">✓ Full keyboard navigation</li>
+                        <li data-i18n="footer.a11y.screenreader">✓ Screen reader support</li>
+                        <li data-i18n="footer.a11y.contrast">✓ High contrast modes</li>
+                        <li data-i18n="footer.a11y.wcag">✓ WCAG 2.1 AA compliant</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ultimate Showcase V3. <span data-i18n="footer.rights">All rights reserved.</span></p>
+                <p class="version">Version 3.0.0</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Low-spec notification -->
+    <div id="low-spec-notification" class="low-spec-notification" role="alert" style="display: none;">
+        <p data-i18n="performance.lowSpecNotification">
+            ⚡ Performance mode enabled for better experience on your device.
+        </p>
+        <button onclick="this.parentElement.remove()" data-i18n="common.gotIt">Got it</button>
+    </div>
+    
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay" aria-live="polite">
+        <div class="loading-content">
+            <div class="loader"></div>
+            <p data-i18n="common.loading">Loading...</p>
+        </div>
+    </div>
+</body>
+</html>
