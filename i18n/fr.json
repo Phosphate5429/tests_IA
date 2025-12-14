@@ -1,0 +1,402 @@
+{
+  "meta": {
+    "language": "Français",
+    "languageCode": "fr",
+    "direction": "ltr"
+  },
+  
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "reset": "Réinitialiser",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "skip": "Passer",
+    "submit": "Envoyer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "refresh": "Actualiser",
+    "more": "Plus",
+    "less": "Moins",
+    "on": "Activé",
+    "off": "Désactivé",
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "visible": "Visible",
+    "hidden": "Masqué"
+  },
+  
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "menu": "Menu",
+    "skipToContent": "Aller au contenu principal",
+    "skipToNavigation": "Aller à la navigation",
+    "backToTop": "Retour en haut",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "toggleTheme": "Changer le thème",
+    "toggleLanguage": "Changer la langue"
+  },
+  
+  "sections": {
+    "hero": {
+      "title": "Ultimate Showcase V3",
+      "subtitle": "Expérience Web Interactive",
+      "description": "Une démonstration de pointe des technologies web modernes avec création de code, jeux interactifs, visualisation audio et effets UI époustouflants.",
+      "cta": "Explorer Maintenant",
+      "scrollIndicator": "Défiler pour explorer"
+    },
+    
+    "creativeCoding": {
+      "title": "Création de Code",
+      "subtitle": "Système de Particules 3D",
+      "description": "Découvrez la puissance de WebGL avec ce système de particules 3D interactif. Déplacez votre souris pour contrôler la caméra et observez des milliers de particules réagir en temps réel.",
+      "instructions": "Déplacez votre souris pour interagir avec les particules",
+      "particleCount": "Nombre de particules : {count}",
+      "fps": "FPS : {fps}",
+      "lowSpecMode": "Mode basse performance activé"
+    },
+    
+    "aimTrainer": {
+      "title": "Entraînement de Précision",
+      "subtitle": "Testez Votre Précision",
+      "description": "Améliorez votre précision et votre temps de réaction avec ce jeu d'entraînement stimulant. Touchez autant de cibles que possible avant la fin du temps !",
+      "start": "Démarrer le Jeu",
+      "pause": "Pause",
+      "resume": "Reprendre",
+      "reset": "Réinitialiser",
+      "score": "Score : {score}",
+      "time": "Temps : {time}s",
+      "accuracy": "Précision : {accuracy}%",
+      "targetsHit": "Cibles touchées : {count}",
+      "gameOver": "Jeu Terminé !",
+      "finalScore": "Score Final : {score}",
+      "playAgain": "Rejouer",
+      "difficulty": "Difficulté",
+      "easy": "Facile",
+      "normal": "Normal",
+      "hard": "Difficile",
+      "expert": "Expert",
+      "mode": "Mode",
+      "timed": "Chronométré",
+      "endless": "Infini",
+      "highScore": "Meilleur Score : {score}"
+    },
+    
+    "sortingVisualizer": {
+      "title": "Visualiseur de Tri",
+      "subtitle": "Animation d'Algorithmes",
+      "description": "Regardez les algorithmes de tri prendre vie avec de magnifiques visualisations. Comparez différents algorithmes et voyez comment ils fonctionnent étape par étape.",
+      "selectAlgorithm": "Sélectionner un Algorithme",
+      "bubbleSort": "Tri à Bulles",
+      "selectionSort": "Tri par Sélection",
+      "insertionSort": "Tri par Insertion",
+      "mergeSort": "Tri Fusion",
+      "quickSort": "Tri Rapide",
+      "heapSort": "Tri par Tas",
+      "startSorting": "Démarrer le Tri",
+      "pauseSorting": "Pause",
+      "resetArray": "Réinitialiser le Tableau",
+      "arraySize": "Taille du Tableau : {size}",
+      "comparisons": "Comparaisons : {count}",
+      "swaps": "Échanges : {count}",
+      "time": "Temps : {time}ms",
+      "sorted": "Tableau trié !",
+      "sorting": "Tri en cours..."
+    },
+    
+    "audioVisualizer": {
+      "title": "Visualiseur Audio",
+      "subtitle": "Analyse Sonore en Temps Réel",
+      "description": "Connectez votre microphone ou téléchargez un fichier audio pour créer de superbes représentations visuelles du son. Découvrez plusieurs modes de visualisation.",
+      "uploadFile": "Télécharger un Fichier Audio",
+      "startMicrophone": "Démarrer le Microphone",
+      "stopMicrophone": "Arrêter le Microphone",
+      "play": "Lire",
+      "pause": "Pause",
+      "stop": "Arrêter",
+      "visualizationType": "Type de Visualisation",
+      "bars": "Barres de Fréquence",
+      "waveform": "Forme d'Onde",
+      "circle": "Circulaire",
+      "particles": "Particules",
+      "spectrum": "Spectre",
+      "sensitivity": "Sensibilité",
+      "volume": "Volume",
+      "frequency": "Fréquence Dominante : {freq} Hz",
+      "microphoneAccess": "Accès au microphone requis",
+      "microphoneDenied": "Accès au microphone refusé",
+      "fileLoaded": "Fichier audio chargé",
+      "noFile": "Aucun fichier audio sélectionné"
+    },
+    
+    "uiShowcase": {
+      "title": "Vitrine d'Interface",
+      "subtitle": "Éléments d'Interface Modernes",
+      "description": "Découvrez une collection de composants UI magnifiquement conçus avec des animations fluides et des effets interactifs.",
+      "buttons": "Boutons",
+      "forms": "Formulaires",
+      "cards": "Cartes",
+      "loaders": "Chargeurs",
+      "notifications": "Notifications",
+      "modals": "Modaux",
+      "tooltips": "Infobulles",
+      "hoverEffect": "Effet de Survol",
+      "clickEffect": "Effet de Clic",
+      "rippleEffect": "Effet d'Ondulation",
+      "pulseEffect": "Effet de Pulsation",
+      "glowEffect": "Effet de Lueur",
+      "showNotification": "Afficher la Notification",
+      "openModal": "Ouvrir le Modal",
+      "showTooltip": "Afficher l'Infobulle",
+      "loading": "Chargement...",
+      "success": "Opération réussie !",
+      "error": "Une erreur est survenue",
+      "warning": "Avertissement",
+      "info": "Information"
+    }
+  },
+  
+  "controls": {
+    "theme": {
+      "toggle": "Changer le thème",
+      "dark": "Mode sombre",
+      "light": "Mode clair",
+      "auto": "Automatique"
+    },
+    
+    "language": {
+      "toggle": "Changer la langue",
+      "english": "English",
+      "french": "Français",
+      "select": "Sélectionner la langue"
+    },
+    
+    "accessibility": {
+      "increaseText": "Augmenter la taille du texte",
+      "decreaseText": "Diminuer la taille du texte",
+      "highContrast": "Mode contraste élevé",
+      "reduceMotion": "Réduire les animations",
+      "screenReader": "Mode lecteur d'écran"
+    },
+    
+    "performance": {
+      "lowSpecMode": "Mode basse performance",
+      "enable": "Activer",
+      "disable": "Désactiver",
+      "fps": "FPS : {fps}",
+      "optimized": "Performance optimisée"
+    }
+  },
+  
+  "notifications": {
+    "lowSpecDetected": {
+      "title": "Mode Performance",
+      "message": "Mode basse performance activé pour une meilleure fluidité. Certains effets ont été réduits.",
+      "action": "Compris"
+    },
+    
+    "audioPermission": {
+      "title": "Accès au Microphone",
+      "message": "Cette application nécessite l'accès à votre microphone pour la visualisation audio.",
+      "allow": "Autoriser",
+      "deny": "Refuser"
+    },
+    
+    "gamePaused": {
+      "title": "Jeu en Pause",
+      "message": "Le jeu a été mis en pause. Cliquez sur reprendre pour continuer.",
+      "resume": "Reprendre"
+    },
+    
+    "fileUploaded": {
+      "title": "Fichier Téléchargé",
+      "message": "Fichier audio chargé avec succès et prêt à être lu.",
+      "ok": "OK"
+    },
+    
+    "error": {
+      "title": "Erreur",
+      "message": "Une erreur inattendue est survenue. Veuillez réessayer.",
+      "retry": "Réessayer"
+    }
+  },
+  
+  "modals": {
+    "gameOver": {
+      "title": "Jeu Terminé",
+      "score": "Votre Score : {score}",
+      "accuracy": "Précision : {accuracy}%",
+      "time": "Temps : {time}s",
+      "playAgain": "Rejouer",
+      "backToMenu": "Retour au Menu"
+    },
+    
+    "settings": {
+      "title": "Paramètres",
+      "appearance": "Apparence",
+      "audio": "Audio",
+      "gameplay": "Jeu",
+      "accessibility": "Accessibilité",
+      "performance": "Performance",
+      "save": "Enregistrer les Paramètres",
+      "reset": "Réinitialiser aux Valeurs par Défaut"
+    },
+    
+    "about": {
+      "title": "À Propos",
+      "version": "Version {version}",
+      "description": "Ultimate Showcase V3 est une démonstration des technologies web modernes et des meilleures pratiques.",
+      "technologies": "Technologies",
+      "features": "Fonctionnalités",
+      "close": "Fermer"
+    }
+  },
+  
+  "tooltips": {
+    "themeToggle": "Basculer entre le thème sombre et clair",
+    "languageToggle": "Changer la langue",
+    "lowSpecToggle": "Activer/désactiver le mode basse performance",
+    "soundToggle": "Activer/désactiver les effets sonores",
+    "fullscreenToggle": "Activer/désactiver le mode plein écran",
+    "help": "Afficher l'aide et les instructions",
+    "settings": "Ouvrir le menu des paramètres",
+    "leaderboard": "Voir les meilleurs scores",
+    "share": "Partager cette page",
+    "download": "Télécharger le fichier"
+  },
+  
+  "errors": {
+    "network": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "audioContext": "Contexte audio non supporté dans ce navigateur.",
+    "webgl": "WebGL non supporté. Certaines visualisations peuvent ne pas fonctionner.",
+    "fileSize": "Taille de fichier trop grande. Taille maximale : {size}MB",
+    "fileType": "Type de fichier invalide. Types supportés : {types}",
+    "permission": "Permission refusée. Veuillez activer l'accès dans les paramètres de votre navigateur.",
+    "unsupported": "Cette fonctionnalité n'est pas supportée dans votre navigateur.",
+    "generic": "Quelque chose s'est mal passé. Veuillez réessayer."
+  },
+  
+  "time": {
+    "seconds": "{count} seconde",
+    "seconds_plural": "{count} secondes",
+    "minutes": "{count} minute",
+    "minutes_plural": "{count} minutes",
+    "hours": "{count} heure",
+    "hours_plural": "{count} heures",
+    "days": "{count} jour",
+    "days_plural": "{count} jours"
+  },
+  
+  "units": {
+    "pixels": "{count} px",
+    "percentage": "{count}%",
+    "hertz": "{count} Hz",
+    "kilobytes": "{count} Ko",
+    "megabytes": "{count} Mo",
+    "fps": "{count} FPS"
+  },
+  
+  "accessibility": {
+    "aria": {
+      "navigation": "Navigation principale",
+      "content": "Contenu principal",
+      "footer": "Pied de page",
+      "modal": "Fenêtre de dialogue",
+      "menu": "Menu",
+      "button": "Bouton",
+      "link": "Lien",
+      "image": "Image",
+      "video": "Vidéo",
+      "audio": "Lecteur audio",
+      "canvas": "Canvas interactif",
+      "form": "Formulaire",
+      "input": "Champ de saisie",
+      "select": "Menu déroulant",
+      "slider": "Curseur de contrôle",
+      "checkbox": "Case à cocher",
+      "radio": "Bouton radio",
+      "tab": "Onglet",
+      "tooltip": "Infobulle",
+      "alert": "Message d'alerte",
+      "status": "Message de statut"
+    },
+    
+    "labels": {
+      "menuButton": "Basculer le menu",
+      "closeButton": "Fermer",
+      "playButton": "Lire",
+      "pauseButton": "Pause",
+      "stopButton": "Arrêter",
+      "volumeSlider": "Contrôle du volume",
+      "progressBar": "Barre de progression",
+      "loadingSpinner": "Chargement",
+      "errorMessage": "Message d'erreur",
+      "successMessage": "Message de succès"
+    }
+  },
+  
+  "seo": {
+    "title": "Ultimate Showcase V3 - Expérience Web Interactive",
+    "description": "Découvrez les technologies web de pointe avec des graphiques 3D interactifs, des jeux, de la visualisation audio et des effets UI époustouflants.",
+    "keywords": "développement web, interactif, 3D, jeux, visualisation audio, effets UI, web moderne",
+    "ogTitle": "Ultimate Showcase V3",
+    "ogDescription": "Une démonstration de pointe des technologies web modernes",
+    "ogImage": "https://example.com/og-image.jpg",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Ultimate Showcase V3",
+    "twitterDescription": "Découvrez les technologies web modernes"
+  },
+  
+  "performance": {
+    "loading": "Chargement des ressources...",
+    "initializing": "Initialisation des modules...",
+    "ready": "Prêt",
+    "optimizing": "Optimisation des performances...",
+    "lowSpecActive": "Mode basse performance actif",
+    "fpsStable": "Performance stable",
+    "fpsDropping": "Performance en baisse",
+    "resourcesLoaded": "Toutes les ressources sont chargées"
+  },
+  
+  "game": {
+    "ready": "Prêt à commencer",
+    "getReady": "Préparez-vous...",
+    "go": "GO !",
+    "timeUp": "Temps écoulé !",
+    "newRecord": "Nouveau record !",
+    "perfect": "Parfait !",
+    "great": "Excellent !",
+    "good": "Bien !",
+    "miss": "Raté !",
+    "combo": "Combo : {count}",
+    "multiplier": "Multiplicateur : x{count}",
+    "pause": "Jeu en pause",
+    "resume": "Jeu repris",
+    "quit": "Quitter le jeu",
+    "restart": "Redémarrer le jeu"
+  },
+  
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "email": "Veuillez saisir une adresse email valide",
+    "url": "Veuillez saisir une URL valide",
+    "minLength": "Longueur minimale : {min} caractères",
+    "maxLength": "Longueur maximale : {max} caractères",
+    "pattern": "Format invalide",
+    "range": "La valeur doit être entre {min} et {max}",
+    "match": "Les valeurs ne correspondent pas"
+  }
+}
